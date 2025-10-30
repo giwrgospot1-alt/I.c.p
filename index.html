@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I.C.P – Με όσα και όσους αγαπάς</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff0f0;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #d00000;
+      color: white;
+      padding: 15px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #ffdddd;
+      padding: 10px;
+    }
+    button {
+      background-color: #d00000;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    section {
+      padding: 20px;
+      font-size: 18px;
+    }
+  </style>
+  <script>
+    function showPage(page) {
+      const pages = {
+        home: "Καλώς ήρθες στο I.C.P — Με όσα και όσους αγαπάς ❤️",
+        ideas: "📝 Ο Τοίχος των Ιδεών σας — προτείνετε, σχολιάστε, δημιουργήστε!",
+        safety: "🔒 I.C.P Ασφάλεια — Προστασία, εμπιστοσύνη και σεβασμός σε κάθε συνομιλία.",
+        gifts: "🎁 Καθημερινά μπόνους, δώρα και εκπλήξεις για όλους τους ενεργούς χρήστες!",
+        news: "🗞️ Ο Κόσμος μας Σήμερα — Οι πιο σημαντικές ειδήσεις της ημέρας."
+      };
+      document.getElementById("content").innerText = pages[page];
+    }
+  </script>
+</head>
+<body>
+  <header>I.C.P – Με όσα και όσους αγαπάς</header>
+  <nav>
+    <button onclick="showPage('home')">Αρχική</button>
+    <button onclick="showPage('ideas')">Ιδέες</button>
+    <button onclick="showPage('safety')">Ασφάλεια</button>
+    <button onclick="showPage('gifts')">Δώρα</button>
+    <button onclick="showPage('news')">Ειδήσεις</button>
+  </nav>
+  <section id="content">
+    Καλώς ήρθες στο I.C.P — Με όσα και όσους αγαπάς ❤️
+  </section>
+</body>
+</html>
